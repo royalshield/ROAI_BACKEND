@@ -174,7 +174,7 @@ Use the wallet address to login and receive a JWT token:
 
 Use the provided Postman Collection to test all APIs.
 
-📥 [Download Postman Collection](./go-event-backend.postman_collection.json)
+📥 [Download Postman Collection](./ROAI-Backend.postman_collection.json)
 
 ---
 
@@ -182,8 +182,6 @@ Use the provided Postman Collection to test all APIs.
 
 - Docker support
 - Email/Push notifications
-- Admin dashboard UI
-- Swagger auto-documentation
 
 ---
 
