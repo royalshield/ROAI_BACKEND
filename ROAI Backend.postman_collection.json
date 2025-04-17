@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "7fe5297c-83fc-4929-8636-c947954fd945",
+		"name": "ROAI Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19587532"
+	},
+	"item": [
+		{
+			"name": "Auth - Wallet Connect",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"wallet\": \"0x3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/wallet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"wallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users (Admin)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Notification (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Maintenance Alert 2\",\n  \"description\": \"System will be down at 8PM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Notifications",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzUiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NDk5MDIyOH0.Xo-YJvMbyOqKsqbhLZXNcAOQrch6pvmnhoFoP6z_UZ8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Notification(Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/notifications/2/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"notifications",
+						"2",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Event (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"picture\": \"https://example.com/image.jpg\",\n  \"title\": \"Blockchain Summit 4\",\n  \"description\": \"A major blockchain 4 event.\",\n  \"place\": \"Dubai,...\",\n  \"attendees_expected\": 150,\n  \"members_limit\": 150,\n  \"date\": \"2025-05-01T18:00:00Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzUiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NDk5MDIyOH0.Xo-YJvMbyOqKsqbhLZXNcAOQrch6pvmnhoFoP6z_UZ8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Event (User)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzUiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NDk5MDIyOH0.Xo-YJvMbyOqKsqbhLZXNcAOQrch6pvmnhoFoP6z_UZ8"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/events/1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"events",
+						"1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Event (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/events/4/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"events",
+						"4",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Event Attendees (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/events/1/attendees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"events",
+						"1",
+						"attendees"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}
