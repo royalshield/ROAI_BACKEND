@@ -3,6 +3,7 @@ package controllers
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"gorm.io/gorm"
 	"roai.global/config"
 	"roai.global/models"
 )
@@ -40,6 +41,8 @@ func RegisterEvent(c *gin.Context) {
 
 	var user models.User
 	config.DB.Where("wallet = ?", wallet).First(&user)
+	config.DB.Model(&user).Where("wallet = ?", wallet).
+		Update("balance", gorm.Expr("balance + ?", config.EVENT_REGISTER_PRIZE))
 	config.DB.Model(&event).Association("Attendees").Append(&user)
 	c.JSON(200, gin.H{"message": "Registered successfully"})
 }
