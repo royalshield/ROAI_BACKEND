@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-const ADMIN_WALLET_ADDRESS = "0x3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc6"
+const ADMIN_WALLET_ADDRESS = "BURCH7Kw2zdXD442zGrkWDzMPymnvtjbrtUhY9FTnbff"
 const REGISTER_PRIZE = 100
 const EVENT_REGISTER_PRIZE = 50
 
