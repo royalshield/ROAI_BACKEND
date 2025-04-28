@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"wallet\": \"0x3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc6\"\n}",
+					"raw": "{\n    \"wallet\": \"0x3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc6\",\n    \"username\": \"admin\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,10 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/auth/wallet",
+					"raw": "http://91.107.173.168:8080/api/auth/wallet",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -43,14 +46,17 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDU4NTkyMjZ9.BoOoYq6AX48VM78pwq5hyIDQwJHhWIbCKbI2v1l812I"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/api/users",
+					"raw": "http://91.107.173.168:8080/api/users",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -81,10 +87,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/notifications",
+					"raw": "http://91.107.173.168:8080/api/notifications",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -106,10 +115,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/api/notifications",
+					"raw": "http://91.107.173.168:8080/api/notifications",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -131,10 +143,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/api/notifications/2/delete",
+					"raw": "http://91.107.173.168:8080/api/notifications/2/delete",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -154,12 +169,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDU5NjczMTN9.Y3QJ_uOFlccqZqDIuVaS8FBiRuerOkFKOOXe6EHKiEk"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"picture\": \"https://example.com/image.jpg\",\n  \"title\": \"Blockchain Summit 4\",\n  \"description\": \"A major blockchain 4 event.\",\n  \"place\": \"Dubai,...\",\n  \"attendees_expected\": 150,\n  \"members_limit\": 150,\n  \"date\": \"2025-05-01T18:00:00Z\"\n}",
+					"raw": "{\n  \"picture\": \"https://example.com/image.jpg\",\n  \"title\": \"Blockchain Summit\",\n  \"description\": \"A major blockchain event.\",\n  \"place\": \"Dubai,...\",\n  \"attendees_expected\": 150,\n  \"members_limit\": 150,\n  \"date\": \"2025-05-01T18:00:00Z\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -167,10 +182,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/events",
+					"raw": "http://91.107.173.168:8080/api/events",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -188,14 +206,17 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzUiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NDk5MDIyOH0.Xo-YJvMbyOqKsqbhLZXNcAOQrch6pvmnhoFoP6z_UZ8"
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDU5NjczMTN9.Y3QJ_uOFlccqZqDIuVaS8FBiRuerOkFKOOXe6EHKiEk"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/api/events",
+					"raw": "http://91.107.173.168:8080/api/events",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -213,14 +234,17 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzUiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NDk5MDIyOH0.Xo-YJvMbyOqKsqbhLZXNcAOQrch6pvmnhoFoP6z_UZ8"
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaZzYiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NTk2NzI0Nn0.pSQWFSGRkSAkNzv7wjAVbaBZdzYunw-f9AQwIhDocdg"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/api/events/1/register",
+					"raw": "http://91.107.173.168:8080/api/events/1/register",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -244,10 +268,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/api/events/4/delete",
+					"raw": "http://91.107.173.168:8080/api/events/4/delete",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
@@ -267,14 +294,17 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDQ5OTAzODZ9.eMIAInvAZWoOJ3BqczEwvDs2Stcqo8btC9Vb7Zt2jok"
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXQiOiIweDNGWmJnaTI5Y3BqcTJHamR3VjhleUh1Skpua0x0a3RaYzYiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDU5NjczMTN9.Y3QJ_uOFlccqZqDIuVaS8FBiRuerOkFKOOXe6EHKiEk"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/api/events/1/attendees",
+					"raw": "http://91.107.173.168:8080/api/events/1/attendees",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"91",
+						"107",
+						"173",
+						"168"
 					],
 					"port": "8080",
 					"path": [
